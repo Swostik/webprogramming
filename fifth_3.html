@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h2> Fibonacci series </h2>
+  <button onclick = "myFunction()"> Get fibonacci </button>
+  <p id="demo"> </p>
+  <script>
+  function myFunction(){
+    var n = prompt ("Please enter a number");
+    var i;
+    var m = Number(n)
+
+    var fib =[1,1];
+    for (i=2; i<m; i++)
+    {
+      fib[i]=fib[i-2] + fib[i-1];
+    }
+    document.getElementById("demo").innerHTML = fib;
+
+  }
+</script>
+</body>
+</html>
