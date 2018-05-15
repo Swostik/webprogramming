@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+
+  <button onclick="myFunction()"> Check if its palindrome </button>
+  <p id = "demo"> </p>
+
+
+
+  <script>
+  function myFunction(){
+    var a=prompt("Give a string to check if its palindrome:");
+
+  // split method changes the string to a new array
+  //reverse method reverses the array
+  //join method joins all element of array to string
+  //comparing the original string a with its reverse
+  if (a== a.split("").reverse().join("")){
+    document.getElementById('demo').innerHTML = "the given string " + a +"is a palindrome";
+  }
+  else {
+    document.getElementById('demo').innerHTML = "the given string " + a +"is not a palindrome";
+
+  }
+  }
+  </script>
+
+</body>
+</html>
