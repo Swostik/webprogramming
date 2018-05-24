@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+  <p id="first"> This is will use id to change its content </p>
+
+  <p class="example">Thsi will be changed.</p>
+  <div>This will use div tag to change its content </div>
+  <button onclick="myFunction()"> Click me </button>
+<script>
+function myFunction(){
+  //this  changes the the text color to red with id named first
+  document.getElementById('first').style.color = "red";
+  //this will change the text for the class name example
+  var x = document.getElementsByClassName("example");
+  x[0].innerHTML = "This is the new class element";
+
+  //this will change te background color of the div
+  var y = document.getElementsByTagName("DIV");
+ y[0].style.backgroundColor = "red";
+
+}
+</script>
+</body>
+</html>
